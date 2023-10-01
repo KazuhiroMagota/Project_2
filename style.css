@@ -1,0 +1,72 @@
+body {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+body {
+    min-height: 100vh;
+    max-width: 450px;
+    background-color: rgb(157, 116, 116); 
+    margin: 0 auto;
+}
+
+.circle {
+	width: 30%;
+	background-color: rgb(131, 176, 47);
+	padding-bottom: 30%;
+    float: left;
+	margin: 1.66%;
+    border-radius: 100%;
+}
+#coin {
+	height: 20%;
+	width: 20%;
+    border-radius: 100%;
+	background-size: cover;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+} 
+.circle.hovered {
+	border: 2px dashed #333;
+  }
+
+
+/* circle hover */
+.circle {
+	transition: transform .2s;
+}
+
+.circle:hover {
+	transform: scale(1.1);
+}
+
+/* card flip */
+
+#flip {
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+#flipper {
+	position: relative;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+
+.flipCard {
+	transform: rotateY(180deg);
+  }
+
+#frontCard, #backCard {
+	position: absolute;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+  }
+  
+
+#backCard {
+	transform: rotateY(180deg);
+  }
+  
+
+
