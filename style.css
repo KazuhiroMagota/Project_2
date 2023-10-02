@@ -11,15 +11,17 @@ body {
 
 .circle {
 	width: 30%;
+	height: 30px;
 	background-color: rgb(131, 176, 47);
 	padding-bottom: 30%;
     float: left;
 	margin: 1.66%;
     border-radius: 100%;
+	border-style: solid;
 }
 #coin {
-	height: 20%;
-	width: 20%;
+	height: 50px;
+	width: 50px;
     border-radius: 100%;
 	background-size: cover;
 	background-position: center;
@@ -27,7 +29,7 @@ body {
 	margin-right: auto;
 } 
 .circle.hovered {
-	border: 2px dashed #333;
+	border: 1px dashed #333;
   }
 
 
@@ -49,7 +51,7 @@ body {
 #flipper {
 	position: relative;
 	text-align: center;
-	transition: transform 0.8s;
+	transition: transform 1.5s;
 	transform-style: preserve-3d;
   }
 
