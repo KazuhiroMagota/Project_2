@@ -1,10 +1,10 @@
-let userPoints = 100; //starting score
+let userPoints = 100; //starting points
 let ColorRandom = document.querySelector('#backCard');
 let cards = document.querySelector('#flipper');
 let circles = document.querySelectorAll('.circle');
 let coin = document.querySelector('#coin')
 
-
+// drag and drop 
 circles.forEach(circle => {
   circle.addEventListener('dragover', e =>{
     e.preventDefault();
