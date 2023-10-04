@@ -72,13 +72,15 @@ function userChoice(colorChosen){
   let winningColor = makeWinningColor();
 
   if (colorChosen === winningColor){
-    alert ('You got the winning color!');
-    userPoints += 5;
-  }
-  if (colorChosen !== winningColor)
 
-  alert (`The result is ${winningColor}, try again!`)
-  userPoints -= 5;
+    alert ('You got the winning color!')
+    userPoints += 5;
+  } else {
+    alert (`The result is ${winningColor}, try again!`)
+    userPoints -= 5;
+  }
+
+ 
 
   updatePoints();
 };
